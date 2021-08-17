@@ -8,7 +8,7 @@ class Book(models.Model):
 
     def average_rating(self):
         all_ratings = map(lambda x: x.rating, self.review_set.all())
-        return np.mean(all_ratings)
+        return np.mean(list(all_ratings))
 
     def __unicode__(self):
         return self.name

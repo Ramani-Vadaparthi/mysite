@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from .forms import ReviewForm
-from .models import Review
+from .models import Review, Book
 
 import datetime
 
